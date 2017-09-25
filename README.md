@@ -1,16 +1,12 @@
-# OSINT-SPY Search using OSINT(Open Source Intelligence)
+# OSINT-SPY Search using OSINT (Open Source Intelligence)
+
 Performs OSINT scan on email/domain/ip_address/organization using OSINT-SPY. It can be used by Data Miners, Infosec Researchers, Penetration Testers and cyber crime investigator in order to find deep information about their target.
-
-
-
 
 # OSINT-SPY Documentation (beta)
 	File Name     :     README
 	Author        :     @sk_security
 	Version       :     0.0.1
 	Website       :     osint-spy.com
-
-
 
 # Overview of this tool:
 * Perform scan on IP Address / domain / email address / BTC(bitcoin) address / device
@@ -20,12 +16,8 @@ Performs OSINT scan on email/domain/ip_address/organization using OSINT-SPY. It 
 * Dump all the contacts and messages from skype database
 * Analyze malware or malicous file remotely
 
-
-
-
 # Licenses information
 OSINT-SPY and its documents are covered with GPL-3.0 (General Public License v3.0)
-
 
 ## Using OSINT-SPY
 ```
@@ -36,11 +28,11 @@ OSINT-SPY and its documents are covered with GPL-3.0 (General Public License v3.
   @@@@@@@@@@@            |  |  @    @  @       |                    |  8                  @
   @@@@@@@@@@@            |  |  @     @ @       |                    |  8                 @
    888888888     @@@@@@@@|  |  @      @@       |            @@@@@@@@|  8                @
-                    
+
 
                                      Search using OSINT
                                   Website: www.osint-spy.com
-    
+
     Usage: osint-spy.py [options]
     Options:
     -h,            --help                    show this help message and exit.
@@ -60,21 +52,14 @@ OSINT-SPY and its documents are covered with GPL-3.0 (General Public License v3.
     --stego_find                             Give a stego file and it will try to find hidden text.
 ```
 
-
-
 # Required setup
 * Python 2.7
-* Use install_linux.py      (for installing all dependencies and libraries on linux)
-* Use install_windows.py    (for installing all dependencies and libraries on windows)
-
-
-
+* If you have pip installed then execute `pip install -r requirements.txt` else do the following.
+* Execute `sudo python install_linux.py` (for installing all dependencies and libraries on linux)
+* Use `python install_windows.py` (for installing all dependencies and libraries on windows)
 
 # Contributors
 	1. Sharad Kumar - @sk_security <twitter handler>
-
-
-
 
 # Full Fledged tool documentation
 > [http://osint-spy.com/command_line](http://osint-spy.com/command_line)
