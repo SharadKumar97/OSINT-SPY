@@ -77,4 +77,4 @@ OSINT-SPY and its documents are covered with GPL-3.0 (General Public License v3.
 
 
 # Full Fledged tool documentation
-> [http://osint-spy.com/command_line](http://osint-spy.com/command_line)
+> [https://osint-spy.com/command_line](https://osint-spy.com/command_line)
