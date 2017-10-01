@@ -1,6 +1,8 @@
 [![Cactuscon](http://static1.squarespace.com/static/56b38e2aa3360ce530d55c24/t/56b3fc1bf850820fe762454d/1506815794423/?format=1500w)](http://cactuscon.com/) US
 
 
+#Major Update coming at BlackHat Arsenal Europe 2017.. Stay Tuned for something secret..
+
 # OSINT-SPY Search using OSINT(Open Source Intelligence)
 Performs OSINT scan on email/domain/ip_address/organization using OSINT-SPY. It can be used by Data Miners, Infosec Researchers, Penetration Testers and cyber crime investigator in order to find deep information about their target.
 
