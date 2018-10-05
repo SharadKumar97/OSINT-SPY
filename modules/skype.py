@@ -1,6 +1,7 @@
 import re
 import sqlite3
 
+
 def getEmails(path):
     match_list = []
     regex_match = re.compile('[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+')
@@ -28,17 +29,19 @@ def getEmails(path):
     db.close()
     print "[*] Discovered %d matches :" % len(match_list)
     for match in match_list:
-        print "Email's Found ::"+match
+        print "Email's Found ::" + match
+
+
 # string for contact [a-zA-Z0-9_.+-]+[a-zA-Z0-9-]+[a-zA-Z0-9-.]+
 def getContacts(path):
-    list=[]
+    list = []
     regex_match = re.compile('([A-Z]\w+(?=[\s\-][A-Z])(?:[\s\-][A-Z]\w+)+)')
     db = sqlite3.connect(path)
     cursor = db.cursor()
     cursor.execute("SELECT name FROM sqlite_master where type='table'")
-    tables=cursor.fetchall()
+    tables = cursor.fetchall()
     for table in tables:
-        print "[*] Scanning tables....%s" %table
+        print "[*] Scanning tables....%s" % table
         # now let select everything
         cursor.execute("SELECT * FROM Contacts")
         rows = cursor.fetchall()
@@ -57,8 +60,8 @@ def getContacts(path):
     for match in list:
         print "Contact found ::" + match
 
-def getChat(path):
 
+def getChat(path):
     list2 = []
     regex_match = re.compile('[a-zA-Z0-9_.+-]+[a-zA-Z0-9-]+[a-zA-Z0-9-.]+')
     db = sqlite3.connect(path)
