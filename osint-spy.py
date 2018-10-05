@@ -1,5 +1,6 @@
 from modules import *
 import argparse
+
 parser = argparse.ArgumentParser()
 parser.add_argument("--btc_block", help="Find information regarding latest block of bitcoin", action="store_true")
 parser.add_argument("--btc_date", help="Find out block information by date", type=int)
@@ -18,7 +19,7 @@ parser.add_argument("--stego_find", help="Give path of image which contains hidd
 args = parser.parse_args()
 if args.skype_db:
     global db_path
-    db_path=args.skype_db
+    db_path = args.skype_db
     getEmails(db_path)
     getContacts(db_path)
     getChat(db_path)
@@ -27,53 +28,55 @@ if args.btc_block:
     getBlock()
     exit()
 if args.btc_date:
-    d=args.btc_date
+    d = args.btc_date
     getBlockListByDate(d)
     exit()
 if args.btc_address:
-    address=args.btc_address
+    address = args.btc_address
     getAddressInfo(address)
     exit()
 if args.ssl_cipher:
-    server=args.ssl_cipher
+    server = args.ssl_cipher
     getCiphers(server)
     exit()
 
 if args.ssl_bleed:
-    server=args.ssl_bleed
+    server = args.ssl_bleed
     heartBleed(server)
     exit()
 if args.domain:
-    domain=args.domain
+    domain = args.domain
     getDetail(domain)
     heartBleed(domain)
     exit()
 if args.email:
-    email_id=args.email
+    email_id = args.email
     fetchData(email_id)
     exit()
 if args.device:
-    device_name=args.device
+    device_name = args.device
     getDevice(device_name)
     exit()
 if args.ip:
-    IP=args.ip
+    IP = args.ip
     ipEnum(IP)
     exit()
 if args.malware:
-    mal_name=args.malware
+    mal_name = args.malware
     sendMalware(mal_name)
     exit()
 if args.carrier:
-    carrier_path=args.carrier
+    carrier_path = args.carrier
 if args.stego_text:
-    secret_text=args.stego_text
-    hideText(carrier_path,secret_text)
+    secret_text = args.stego_text
+    hideText(carrier_path, secret_text)
     exit()
 if args.stego_find:
-    steg_img=args.stego_find
+    steg_img = args.stego_find
     findText(steg_img)
     exit()
+
+
 def printOnStart():
     print """
 
@@ -109,4 +112,6 @@ def printOnStart():
     --stego_find                             Give a stego file and it will try to find hidden text.
     
     """
+
+
 printOnStart()

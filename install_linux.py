@@ -2,6 +2,7 @@
 #  Run this script and install all dependencies.
 ###################################################
 import os
+
 os.system('sudo apt-get install python-pip')
 os.system('sudo pip install clearbit')
 os.system('sudo pip install shodan')
