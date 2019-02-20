@@ -2,7 +2,7 @@
 #  Run this script and install all dependencies.
 ###################################################
 import os
-os.system('sudo apt-get install python-pip')
+os.system('sudo pacman -S python-pip')
 os.system('sudo pip install clearbit')
 os.system('sudo pip install shodan')
 os.system('sudo pip install fullcontact.py')
