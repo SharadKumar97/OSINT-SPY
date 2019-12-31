@@ -9,7 +9,7 @@ Performs OSINT scan on email/domain/ip_address/organization using OSINT-SPY. It 
 	File Name     :     README
 	Author        :     @sk_security
 	Version       :     2.0
-	Website       :     osint-spy.io
+	Website       :     https://docs.osint-spy.io
 
 
 
@@ -36,7 +36,7 @@ OSINT-SPY and its documents are covered with GPL-3.0 (General Public License v3.
        888888888     @@@@@@@@|  |  @      @@       |            @@@@@@@@|  8                @
 
                                          Search using OSINT
-                                      Website: docs.osint-spy.io
+                                      Website: https://docs.osint-spy.io
 
         Usage: osint-spy.py [options]
         Options:

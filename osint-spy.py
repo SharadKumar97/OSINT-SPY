@@ -76,7 +76,7 @@ else:
        888888888     @@@@@@@@|  |  @      @@       |            @@@@@@@@|  8                @
 
                                          Search using OSINT
-                                      Website: www.osint-spy.io
+                                      Website: https://docs.osint-spy.io
 
         Usage: osint-spy.py [options]
         Options:
