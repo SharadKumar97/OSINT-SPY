@@ -1,54 +1,46 @@
-from fullcontact import FullContact
 from modules.config import *
-import json
-fc=FullContact(fullcontact_api_key)
+import json, requests
+
 def fetchData(email_id):
-    person = fc.person(email=email_id)
-    data = person.json()
-    try:
-        print("Personal Information :: ")
-        print("Full Name :: "+ data['contactInfo']['fullName'])
-        print("Given Name :: "+ data['contactInfo']['givenName'])
-        print("Gender :: "+ str(data['demographics']['gender']))
-        print("Website :: "+ str(data['contactInfo']['websites']))
-        print("Full Address :: "+ str(data['demographics']['locationDeduced']['normalizedLocation']))
-        print("City :: "+ str(data['demographics']['locationDeduced']['city']['name']))
-        print("State :: "+ str(data['demographics']['locationDeduced']['state']['name']))
-        print("Country :: "+ str(data['demographics']['locationDeduced']['country']['name']))
-        print("\n")
-    except:
-        print("Unavailable")
+    url = 'https://api.fullcontact.com/v3/person.enrich'
+    headers = {"Authorization": f"Bearer {fullcontact_api_key}"}
+    data = json.dumps({"email": email_id})
+    response = requests.post(url, data=data, headers=headers)
 
+    if response.status_code == 404:
+        print('Profile not found')
+        return
 
-    try:
-        print("Employment Detail :: ")
-        for org in data['organizations']:
-            print("Organization::"+org['name']+" "+"Start date::"+" "+org['startDate']+" "+"Job Title::"+" "+org['title'])
-
-    except:
-        print(" ")
-    print("\n")
-
-    try:
-        for soc in data['socialProfiles']:
-            print("Social Profiles :: "+ " "+soc['url'])
-    except:
-        print(" ")
-
-    print("\n")
-    print("Tags and Skills :: ")
-    try:
-        for social in data['digitalFootprint']['topics']:
-            print(social['value'])
-    except:
-        print(" ")
-    print("\n")
-    print("Photos and Pics :: ")
-    try:
-        for pic in data['photos']:
-            print("Url :: "+" "+ pic['url'])
-
-    except:
-        print("Try again.")
-
+    print('General Details:')
+    print(('-'*20))
+    attributes = ['fullName', 'ageRange', 'gender', 'location', 'title', 
+                'organization', 'twitter', 'linkedin', 'facebook', 'bio', 'avatar', 'website']
+    response = response.json()
+    for attribute in attributes:
+        try:
+            value = response[attribute]
+            if value is not None:
+                print(f'{attribute.capitalize()}: {value}')
+        except:
+            pass
+    
+    print('\nMore details:')
+    print(('-'*20))
+    details = ['emails', 'phones', 'employment', 'education', 'interests']
+    for attribute in details:
+        try:
+            value_list = response['details'][attribute]
+            if value_list:
+                print(f'{attribute.capitalize()}: ')
+                print(('-'*20))
+                for value in value_list:
+                    if isinstance(value, str):
+                        print(value, end=' ')
+                    else:
+                        for data in value:
+                            print(f'{data.capitalize()}: {value[data]}')
+                        print()
+                print()
+        except:
+            pass
 
