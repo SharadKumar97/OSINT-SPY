@@ -1,0 +1,11 @@
+certifi==2019.11.28
+chardet==3.0.4
+clearbit==0.1.7
+Click==7.0
+click-plugins==1.1.1
+colorama==0.4.3
+idna==2.8
+requests==2.22.0
+shodan==1.21.2
+urllib3==1.25.7
+XlsxWriter==1.2.7
