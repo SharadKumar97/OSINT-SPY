@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Usage &mdash; learning_sphinx 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Roadmap" href="roadmap.html" />
+    <link rel="prev" title="Generating API Keys" href="api_keys.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> learning_sphinx
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">OSINT-SPY Command Line</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#cloning-osint-spy">Cloning Osint-Spy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#installing-dependencies">Installing dependencies</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api_keys.html">Generating API Keys</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api_keys.html#clearbit-api">Clearbit API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_keys.html#shodan-api">Shodan API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_keys.html#fullcontact-api">FullContact API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_keys.html#virustotal-api">VirusTotal API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_keys.html#email-hunter-api">Email Hunter API</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#btc-block">–btc_block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#btc-date">–btc_date</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#btc-address">–btc_address</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ssl-cipher">–ssl_cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ssl-bleed">–ssl_bleed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#domain">–domain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#email">–email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#device">–device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ip">–ip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#malware">–malware</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="roadmap.html">Roadmap</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">learning_sphinx</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Usage</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/usage.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<p>OSINT-SPY is very handy tool and easy to use.
+All you have to do is just have to pass values to parameter.
+In order to start OSINT-SPY just write</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<div class="section" id="btc-block">
+<h2>–btc_block<a class="headerlink" href="#btc-block" title="Permalink to this headline">¶</a></h2>
+<p>–btc_block parameter gives you the information
+of the latest bitcoin block chain.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">btc_block</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="btc-date">
+<h2>–btc_date<a class="headerlink" href="#btc-date" title="Permalink to this headline">¶</a></h2>
+<p>–btc_date parameter will give you an information
+of bitcoin block chain from given date.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">btc_date</span> <span class="mi">20170620</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="btc-address">
+<h2>–btc_address<a class="headerlink" href="#btc-address" title="Permalink to this headline">¶</a></h2>
+<p>–btc_address will give you an information
+about particular bitcoin owner.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">btc_address</span> <span class="mi">1</span><span class="n">DST3gm6JthxhuoNKFqXrdpzPFfz1WgHpW</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ssl-cipher">
+<h2>–ssl_cipher<a class="headerlink" href="#ssl-cipher" title="Permalink to this headline">¶</a></h2>
+<p>-ssl_cipher will show you all the ciphers
+supported by given website.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">ssl_cipher</span> <span class="n">google</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ssl-bleed">
+<h2>–ssl_bleed<a class="headerlink" href="#ssl-bleed" title="Permalink to this headline">¶</a></h2>
+<p>–ssl_bleed will find out whether given website
+is vulnerable to heartbleed or not ?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">ssl_bleed</span> <span class="n">google</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="domain">
+<h2>–domain<a class="headerlink" href="#domain" title="Permalink to this headline">¶</a></h2>
+<p>–domain will give you in depth-information about
+particular domain including whois, dns, ciphers,
+location and so more.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">domain</span> <span class="n">google</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="email">
+<h2>–email<a class="headerlink" href="#email" title="Permalink to this headline">¶</a></h2>
+<p>–email will gather information about given
+email address from various public sources.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">email</span> <span class="n">david</span><span class="nd">@google</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="device">
+<h2>–device<a class="headerlink" href="#device" title="Permalink to this headline">¶</a></h2>
+<p>–device will search for a given device from
+shodan and will list out all the available
+devices on public IP.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">device</span> <span class="n">webcam</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ip">
+<h2>–ip<a class="headerlink" href="#ip" title="Permalink to this headline">¶</a></h2>
+<p>–ip will gather all the information of given
+IP Address from public sources.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">ip</span> <span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="malware">
+<h2>–malware<a class="headerlink" href="#malware" title="Permalink to this headline">¶</a></h2>
+<p>–malware will send a given piece of file to
+virustotal and will give you a result whether given file
+is malware or not?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">malware</span> <span class="n">abc</span><span class="o">.</span><span class="n">exe</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="roadmap.html" class="btn btn-neutral float-right" title="Roadmap" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="api_keys.html" class="btn btn-neutral float-left" title="Generating API Keys" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, sayam049
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
