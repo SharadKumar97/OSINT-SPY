@@ -1,0 +1,257 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Setup &mdash; learning_sphinx 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Generating API Keys" href="api_keys.html" />
+    <link rel="prev" title="Overview" href="overview.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> learning_sphinx
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">OSINT-SPY Command Line</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#cloning-osint-spy">Cloning Osint-Spy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-dependencies">Installing dependencies</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api_keys.html">Generating API Keys</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api_keys.html#clearbit-api">Clearbit API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_keys.html#shodan-api">Shodan API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_keys.html#fullcontact-api">FullContact API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_keys.html#virustotal-api">VirusTotal API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_keys.html#email-hunter-api">Email Hunter API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#btc-block">–btc_block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#btc-date">–btc_date</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#btc-address">–btc_address</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#ssl-cipher">–ssl_cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#ssl-bleed">–ssl_bleed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#domain">–domain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#email">–email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#device">–device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#ip">–ip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#malware">–malware</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="roadmap.html">Roadmap</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">learning_sphinx</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Setup</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/setup.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="setup">
+<h1>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h1>
+<p>Installing and using OSINT-SPY is very easy.
+Installation process is very simple and is of 4 steps.</p>
+<ol class="arabic simple">
+<li><p>Downloading or cloning OSINT-SPY github repository.</p></li>
+<li><p>Downloading and installing all dependencies.</p></li>
+<li><p>Generating API Keys</p></li>
+<li><p>Adding API Keys in config file</p></li>
+</ol>
+<p>Let’s Begin !!</p>
+<div class="section" id="cloning-osint-spy">
+<h2>Cloning Osint-Spy<a class="headerlink" href="#cloning-osint-spy" title="Permalink to this headline">¶</a></h2>
+<p>In order to install OSINT-SPY simply clone the github repository.
+Below is the command which you can use
+in order to clone OSINT-SPY repository.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">SharadKumar97</span><span class="o">/</span><span class="n">OSINT</span><span class="o">-</span><span class="n">SPY</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="installing-dependencies">
+<h2>Installing dependencies<a class="headerlink" href="#installing-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>Once you clone OSINT-SPY, you will find one directory name as OSINT-SPY.
+Just go that directory and install the requirements either
+in a virtual environment or in the system itself.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="api_keys.html" class="btn btn-neutral float-right" title="Generating API Keys" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="overview.html" class="btn btn-neutral float-left" title="Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, sayam049
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

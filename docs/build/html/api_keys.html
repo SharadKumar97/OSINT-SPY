@@ -1,0 +1,289 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Generating API Keys &mdash; learning_sphinx 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Usage" href="usage.html" />
+    <link rel="prev" title="Setup" href="setup.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> learning_sphinx
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">OSINT-SPY Command Line</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#cloning-osint-spy">Cloning Osint-Spy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#installing-dependencies">Installing dependencies</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Generating API Keys</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#clearbit-api">Clearbit API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#shodan-api">Shodan API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fullcontact-api">FullContact API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#virustotal-api">VirusTotal API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#email-hunter-api">Email Hunter API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#btc-block">–btc_block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#btc-date">–btc_date</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#btc-address">–btc_address</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#ssl-cipher">–ssl_cipher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#ssl-bleed">–ssl_bleed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#domain">–domain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#email">–email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#device">–device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#ip">–ip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#malware">–malware</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="roadmap.html">Roadmap</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">learning_sphinx</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Generating API Keys</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/api_keys.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="generating-api-keys">
+<h1>Generating API Keys<a class="headerlink" href="#generating-api-keys" title="Permalink to this headline">¶</a></h1>
+<p>We need some API Keys before using this tool.
+Following are the API’s which we are using in
+this tool for a time being. Paste all the API keys
+in the config.py in their respective placeholdes.</p>
+<div class="section" id="clearbit-api">
+<h2>Clearbit API<a class="headerlink" href="#clearbit-api" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Create an account at <a class="reference external" href="https://dashboard.clearbit.com/signup">Clearbit</a>. Fill in the email address and password.</p></li>
+<li><p>Click Next. Fill in the relevant details.</p></li>
+<li><p>Confirm your email address.</p></li>
+<li><p>You will notice <strong>API Key</strong> in <strong>API section</strong> in left pane.
+Copy that and paste in <code class="docutils literal notranslate"><span class="pre">clearbit_api_key</span></code>.</p></li>
+</ol>
+</div>
+<div class="section" id="shodan-api">
+<h2>Shodan API<a class="headerlink" href="#shodan-api" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Create an account at <a class="reference external" href="https://account.shodan.io/register">Shadon</a>. Fill in the details.</p></li>
+<li><p>Confirm the email address.</p></li>
+<li><p><a class="reference external" href="https://account.shodan.io/login">Login</a> with the credentials.</p></li>
+<li><p>After login, you will notice <strong>API Key</strong>
+in <strong>Account Overview</strong> section. Copy that and paste in <code class="docutils literal notranslate"><span class="pre">shodan_api_key</span></code>.</p></li>
+<li><p>If successfully logged in, the <strong>API Key</strong> is also
+visible at the topmost header of <a class="reference external" href="https://www.shodan.io/?language=en">shadon.io</a>.</p></li>
+</ol>
+</div>
+<div class="section" id="fullcontact-api">
+<h2>FullContact API<a class="headerlink" href="#fullcontact-api" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Create an account at <a class="reference external" href="https://dashboard.fullcontact.com/register">FullContact</a>.
+Use your business email address.</p></li>
+<li><p>Fill in the required details.</p></li>
+<li><p>After successfully logging in, select
+Get an <strong>API Key</strong> from <strong>Getting started</strong> section.</p></li>
+<li><p>Enter the name for the key and after generating,
+paste the key in <code class="docutils literal notranslate"><span class="pre">fullcontact_api_key</span></code>.</p></li>
+</ol>
+</div>
+<div class="section" id="virustotal-api">
+<h2>VirusTotal API<a class="headerlink" href="#virustotal-api" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Create an account at <a class="reference external" href="https://www.virustotal.com/gui/join-us">VirusTotal</a>. Fill in the details.</p></li>
+<li><p>Confirm your email address. Log in to your account.</p></li>
+<li><p>Click on the avatar on top right to visit your profile.</p></li>
+<li><p>You will notice an <strong>API Key</strong>. Paste that key in <code class="docutils literal notranslate"><span class="pre">virus_total_api_key</span></code>.</p></li>
+</ol>
+</div>
+<div class="section" id="email-hunter-api">
+<h2>Email Hunter API<a class="headerlink" href="#email-hunter-api" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Create an account at <a class="reference external" href="https://hunter.io/users/sign_up">Email Hunter</a>.
+Use your business email address.</p></li>
+<li><p>Fill in the details. Confirm your email address.
+Verify your mobile number.</p></li>
+<li><p>After successfully logging in, find your <strong>API Key</strong>
+under your profile in top right.</p></li>
+<li><p>Paste that API key in <code class="docutils literal notranslate"><span class="pre">email_hunter_api_key</span></code>.</p></li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="usage.html" class="btn btn-neutral float-right" title="Usage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="setup.html" class="btn btn-neutral float-left" title="Setup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, sayam049
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
