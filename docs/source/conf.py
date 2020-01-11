@@ -17,12 +17,12 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'learning_sphinx'
-copyright = '2020, sayam049'
-author = 'sayam049'
+project = 'OSINT-SPY'
+copyright = '2020, @sk_security'
+author = 'Sharad Kumar'
 
 # The full version, including alpha/beta/rc tags
-release = '1.0.0'
+release = '2.0.0'
 
 
 # -- General configuration ---------------------------------------------------
