@@ -13,11 +13,16 @@ def fetch_email(email_id, json_output=False):
         print(response.json())
         return
 
-    if response.status_code == 404:
-        print('Profile not found.')
-        return
     if response.status_code == 401:
         print('Wrong fullcontact_api_key.')
+        return
+
+    if response.status_code == 403:
+        print('Invalid authentication. Check API key')
+        return
+
+    if response.status_code == 404:
+        print('Profile not found.')
         return
 
     print('General Details:')
