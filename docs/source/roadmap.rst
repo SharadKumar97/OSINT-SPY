@@ -1,7 +1,7 @@
 Roadmap
 =======
 
-This is the initial version of the project.
+This is the initial version of OSINT-SPY.
 In future, we will add various social platofrms API
 and we will try to make it better by adding database functionality.
 

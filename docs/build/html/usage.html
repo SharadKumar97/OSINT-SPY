@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Usage &mdash; OSINT-SPY 1.0.0 documentation</title>
+  <title>Usage &mdash; OSINT-SPY 2.0.0 documentation</title>
   
 
   
@@ -84,7 +84,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="setup.html">Setup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="setup.html#cloning">Cloning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#cloning-osint-spy">Cloning Osint-Spy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="setup.html#installing-dependencies">Installing dependencies</a></li>
 </ul>
 </li>
@@ -177,7 +177,8 @@
   <div class="section" id="usage">
 <h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
 <p>OSINT-SPY is very handy tool and easy to use.
-All you have to do is just have to pass values to parameter.
+All you have to do is just pass values to parameter.
+Use <code class="docutils literal notranslate"><span class="pre">--json</span></code> to generate output in json format.
 In order to start OSINT-SPY just write</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
@@ -185,24 +186,39 @@ In order to start OSINT-SPY just write</p>
 <div class="section" id="btc-block">
 <h2>–btc_block<a class="headerlink" href="#btc-block" title="Permalink to this headline">¶</a></h2>
 <p>–btc_block parameter gives you the information
-of the latest bitcoin block chain.</p>
+of the latest bitcoin block chain. Optional Parameter
+<code class="docutils literal notranslate"><span class="pre">--json</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">btc_block</span>
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">btc_block</span> <span class="o">--</span><span class="n">json</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="btc-date">
 <h2>–btc_date<a class="headerlink" href="#btc-date" title="Permalink to this headline">¶</a></h2>
 <p>–btc_date parameter will give you an information
-of bitcoin block chain from given date.</p>
+of bitcoin block chain from given date. Optional Parameter
+<code class="docutils literal notranslate"><span class="pre">--json</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">btc_date</span> <span class="mi">20170620</span>
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">btc_date</span> <span class="mi">20170620</span> <span class="o">--</span><span class="n">json</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="btc-address">
 <h2>–btc_address<a class="headerlink" href="#btc-address" title="Permalink to this headline">¶</a></h2>
 <p>–btc_address will give you an information
-about particular bitcoin owner.</p>
+about particular bitcoin owner. Optional Parameter
+<code class="docutils literal notranslate"><span class="pre">--json</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">btc_address</span> <span class="mi">1</span><span class="n">DST3gm6JthxhuoNKFqXrdpzPFfz1WgHpW</span>
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">btc_address</span> <span class="mi">1</span><span class="n">DST3gm6JthxhuoNKFqXrdpzPFfz1WgHpW</span> <span class="o">--</span><span class="n">json</span>
 </pre></div>
 </div>
 </div>
@@ -226,16 +242,26 @@ is vulnerable to heartbleed or not ?</p>
 <h2>–domain<a class="headerlink" href="#domain" title="Permalink to this headline">¶</a></h2>
 <p>–domain will give you in depth-information about
 particular domain including whois, dns, ciphers,
-location and so more.</p>
+location and so more. Optional Parameter
+<code class="docutils literal notranslate"><span class="pre">--json</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">domain</span> <span class="n">google</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">domain</span> <span class="n">google</span><span class="o">.</span><span class="n">com</span> <span class="o">--</span><span class="n">json</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="email">
 <h2>–email<a class="headerlink" href="#email" title="Permalink to this headline">¶</a></h2>
 <p>–email will gather information about given
-email address from various public sources.</p>
+email address from various public sources.
+Optional Parameter <code class="docutils literal notranslate"><span class="pre">--json</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">email</span> <span class="n">david</span><span class="nd">@google</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">email</span> <span class="n">david</span><span class="nd">@google</span><span class="o">.</span><span class="n">com</span> <span class="o">--</span><span class="n">json</span>
 </pre></div>
 </div>
 </div>
@@ -243,16 +269,25 @@ email address from various public sources.</p>
 <h2>–device<a class="headerlink" href="#device" title="Permalink to this headline">¶</a></h2>
 <p>–device will search for a given device from
 shodan and will list out all the available
-devices on public IP.</p>
+devices on public IP. Optional Parameter <code class="docutils literal notranslate"><span class="pre">--json</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">device</span> <span class="n">webcam</span>
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">device</span> <span class="n">webcam</span> <span class="o">--</span><span class="n">json</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="ip">
 <h2>–ip<a class="headerlink" href="#ip" title="Permalink to this headline">¶</a></h2>
 <p>–ip will gather all the information of given
-IP Address from public sources.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">ip</span> <span class="mf">45.76</span><span class="o">.</span><span class="mf">151.11</span>
+IP Address from public sources.
+Optional Parameter <code class="docutils literal notranslate"><span class="pre">--json</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">ip</span> <span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span>
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">ip</span> <span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span> <span class="o">--</span><span class="n">json</span>
 </pre></div>
 </div>
 </div>
@@ -260,8 +295,12 @@ IP Address from public sources.</p>
 <h2>–malware<a class="headerlink" href="#malware" title="Permalink to this headline">¶</a></h2>
 <p>–malware will send a given piece of file to
 virustotal and will give you a result whether given file
-is malware or not?</p>
+is malware or not? Optional Parameter <code class="docutils literal notranslate"><span class="pre">--json</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">malware</span> <span class="n">abc</span><span class="o">.</span><span class="n">exe</span>
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">osint</span><span class="o">-</span><span class="n">spy</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">malware</span> <span class="n">abc</span><span class="o">.</span><span class="n">exe</span> <span class="o">--</span><span class="n">json</span>
 </pre></div>
 </div>
 </div>
@@ -287,7 +326,7 @@ is malware or not?</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2020, sayam049
+        &copy; Copyright 2020, @sk_security
 
     </p>
   </div>
