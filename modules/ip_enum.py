@@ -1,19 +1,16 @@
+from .config import *
+from .utils import format_dict
 import shodan
-from modules.config import *
-SHODAN_API_KEY=shodan_api_key
-global api
-api=shodan.Shodan(SHODAN_API_KEY)
-def ipEnum(IP):
-    try:
-        print(IP)
-        host=api.host(IP)
-        print("Host :: "+str(host['ip_str']))
-        print("Country Name :: "+str(host['country_name']))
-        print("City :: "+str(host['city']))
-        print("Organization :: "+str(host['org']))
-        print("ISP :: "+str(host['isp']))
-        print("Vulnerability CVE ID :: "+str(host['vulns']))
-        print("Open ports :: "+str(host['ports']))
-    except:
-        print("Try Again")
 
+
+def ip_details(ip, json_output=False):
+    try:
+        api = shodan.Shodan(shodan_api_key)
+        host = api.host(ip)
+        if json_output:
+            print(host)
+            return
+        print(f'IP Provided:: {ip}')
+        format_dict(host, attribute='data')
+    except shodan.APIError as e:
+        print(e)
