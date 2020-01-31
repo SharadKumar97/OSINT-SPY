@@ -51,6 +51,7 @@ OSINT-SPY and its documents are covered with GPL-3.0 (General Public License v3.
         --device                                 Explore the Internet of Things. Example - opensips,asterisk,juniper,windows10
         --ip                                     WHOIS IP Lookup
         --malware                                Send files to VirusTotal for malware analysis
+        --json                                   Show output in JSON format
 
 ```
 
