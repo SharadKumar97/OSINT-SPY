@@ -10,8 +10,8 @@ def get_bitcoin_data(url, json_output=False):
     except Exception as e:
         print(e)
     else:
-        if response.status_code == 403:
-            print('Forbidden Access. Try after some time.')
+        if response.status_code != 200:
+            print('Server Side Error or Forbidden Access.\nTry after some time.')
             return
 
         response = response.json()
