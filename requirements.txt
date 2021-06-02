@@ -7,5 +7,5 @@ colorama==0.4.3
 idna==2.8
 requests==2.22.0
 shodan==1.21.2
-urllib3==1.25.7
+urllib3==1.26.5
 XlsxWriter==1.2.7
