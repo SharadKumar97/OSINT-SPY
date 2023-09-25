@@ -1,8 +1,6 @@
 from .config import *
 from .utils import format_dict
-import clearbit
 import requests
-clearbit.key = clearbit_api_key
 
 
 def get_company_detail(domain, json_output=False):
